@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/0c4bf69ba3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+<div class="overlay" onclick="movePageToNext()">
+    <div class="image_container">
+        <img src="assets/red_lightening.jpg" class="win_img">
+        <img src="assets/wow.png" class="wow_img">
+    </div>
+
+    <div class="stars_container">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+
+    <div class="btn_container">
+
+    </div>
+
+</div>
+
+<div style="width:900px;">
+    <img class="bg_image" src="assets/sittingRoom.jpg" height="550" width="900">
+</div>
+
+<div class="lamp_overlay">
+    <svg height="50" width="50" class="circle_lamp" id="lamp">
+        <circle cx="30" cy="30" r="15"  id="circle" opacity="0"/>
+    </svg>
+</div>
+
+<div class="tv_overlay">
+    <svg height="180" width="220" class="poly_tv" id="tv_svg" >
+        <polygon points="25,10 215,10 210,170 30,175" id="tv" opacity="0"/>
+    </svg>
+</div>
+
+<div class="light_overlay">
+    <svg height="200" width="400" class="poly_light" id="light_svg">
+        <polygon class="round" points="65,15 45,65 140,65 125,15" stroke="black" stroke-width="10" opacity="0" id="light"/>
+    </svg>
+</div>
+
+<div class="wall_light1_overlay">
+    <svg height="400" width="50" class="wall_light1" id="wall1_svg">
+        <rect width="20" height="215" opacity="0" id="wall1"/>
+    </svg>
+</div>
+
+<div class="wall_light2_overlay">
+    <svg height="335" width="40" class="wall_light2" id="wall2_svg">
+        <rect width="15" height="170" opacity="0" id="wall2"/>
+    </svg>
+</div>
+
+<div class="tall_lamp_overlay">
+    <svg height="250" width="450" class="poly_tall_lamp" id="tall_svg">
+        <polygon class="round" points="60,45 25,80 110,130 110,70" stroke="black" stroke-width="10" opacity="0" id="tall_lamp"/>
+    </svg>
+</div>
+
+</div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>

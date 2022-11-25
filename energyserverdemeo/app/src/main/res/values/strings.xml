@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">                   Planet SuperHeroes</string>
+    <string-array name="language_array">
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Hindi</item>
+    </string-array>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

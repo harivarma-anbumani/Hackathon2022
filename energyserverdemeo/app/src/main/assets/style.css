@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.lamp_overlay .circle_lamp {
+    position: absolute;
+    top:239px;
+    left: 630px;
+}
+
+.tv_overlay .poly_tv {
+    position: absolute;
+    top:147px;
+    left: 328px;
+}
+
+.light_overlay .poly_light {
+    position: absolute;
+    top: 13px;
+    left: 350px;
+}
+
+.round {
+    stroke-linejoin: round;
+}
+
+.tall_lamp_overlay .poly_tall_lamp {
+    position: absolute;
+    top: 180px;
+    left: 715px;
+}
+
+.wall_light1_overlay .wall_light1 {
+    position: absolute;
+    top: 98px;
+    left:40px;
+}
+
+.wall_light2_overlay .wall_light2 {
+    position: absolute;
+    top: 130px;
+    left:142px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    display: none;
+    z-index: 1;
+}
+
+.image_container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.win_img {
+    margin: auto;
+    display: block;
+    height: 350px;
+    width: 600px; 
+    align-items: center;
+    animation: pulse 1s linear infinite;
+}
+
+.wow_img {
+    margin: auto;
+    display: block;
+    position: absolute; 
+    top: 40px;
+    left: 390px;
+    height: 300px;
+    width: 400px;
+    animation: pulse 1s linear infinite;
+}
+
+.btn_container {
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.play_again_btn,
+.home_btn {
+    height: 50px;
+    border-radius: 5px;
+    background-color: yellow;
+    border: 1px solid yellow;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;   
+}
+
+.play_again_btn {
+    margin-right: 20px;
+}
+
+.fa-house{ 
+    margin-left: 5px;
+}
+
+.stars_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.fa-star {
+    color: yellow;
+    font-size: 32px;
+    margin-right: 10px;
+    animation: spin 1s linear infinite;
+
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(.7);
+        transform: scale(.7);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    100% {
+        -webkit-transform: scale(.7);
+        transform: scale(.7);
+    }
+}
+
+@keyframes spin {
+
+    0%
+   {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    25% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    75% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
